@@ -1,0 +1,145 @@
+/*-----------------INDEX---------------------*/
+  /*** 1.0 BOX SIZING ***/
+  /*** 2.0 COLORS ***/
+  	/* 2.1 #FFF - White */
+  	/* 2.2 #FFF - White */
+  	/* 2.3 #FFF - White */
+  /*** 3.0 TEXT & FONTS ***/
+  /*** 4.0 GENERAL PAGE CONSTRUCTION ***/
+    /* 4.1 HEADER */
+    /* 4.2 PORTFOLIO */
+    /* 4.3 SECTION CALL TO ACTION */
+    /* 4.4 HIRE-JOB */
+  /*** 5.0 LINKS & BUTTONS ***/
+/*------------------------------------------*/
+
+/*** 1.0 BOX SIZING ***/
+* {
+    box-sizing: border-box;
+  }
+  /* Keep border and padding inside the box measurement */
+  
+  /*** 3.0 TEXT & FONTS ***/
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+  p {
+      font-size: 20px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 300;
+  }
+  
+  h1,h2,h3,h4,h5,h6 {
+      text-transform: uppercase;
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+  }
+  
+  /*** 4.0 GENERAL PAGE CONSTRUCTION ***/
+  body {
+      overflow-x: hidden;
+  }
+  
+  /* 4.1 HEADER */
+  header {
+      text-align: center;
+      color: #FFF;
+      background: url(../images/pinks.jpeg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  
+  header img {
+      display: block;
+      margin: 0 auto 20px;
+  }
+  
+  header .intro-text .name {
+      display: block;
+      text-transform: uppercase;
+      font-family: 'Roboto Slab', serif;
+      font-size: 2em;
+      font-weight: 700;
+  }
+  
+  header .intro-text .skills {
+      font-size: 1.25em;
+      font-weight: 300;
+      font-family: Open Sans, sans-serif;
+      font-style: light;
+  }
+  
+  @media(min-width:768px) {
+      header .container {
+          padding-top: 200px;
+          padding-bottom: 186px;
+      }
+      header .intro-text .name {
+          font-size: 4.75em;
+      }
+      header .intro-text .skills {
+          font-size: 1.75em;
+      }
+  }
+  /* 4.2 PORTFOLIO */
+  @media (min-width:600px ){
+  .sm-title {
+      text-align: center;
+      position: relative;
+      top: 26px;
+      padding-bottom: 25px;
+      padding-left: 12px;
+      padding-right: 12px;
+      }
+  }
+  /* 4.3 SECTION CALL TO ACTION */
+  section {
+        padding-top: 55px;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-bottom: 50px;
+  }
+  
+  section#call-to-action {
+      text-align: left;
+      color: white;
+      background: url(../images/purple.jpg) 
+      no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  }
+  
+  @media(max-width:767px) {
+      section {
+          padding: 75px 0;
+      }
+  
+      section.first {
+          padding-top: 75px;
+      }
+  }
+  /* 4.4 HIRE-JOB */
+  .hire-job {
+      background-color: ghostwhite;
+      padding: 60px;
+  }
+  
+  .socialBtn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  /*** 5.0 LINKS & BUTTONS ***/
+  a,
+  a:hover,
+  a:focus,
+  a:active,
+  a.active {
+      text-decoration: none;
+  }
+  
+  a:hover, a:active {
+      opacity: 0.5;
+  }
